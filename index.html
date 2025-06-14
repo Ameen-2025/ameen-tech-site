@@ -18,24 +18,24 @@
             font-family: 'Segoe UI', Arial, sans-serif;
             color: #24292f;
             background: #f8f9fa;
-            /* Use your provided JPEG as background */
             background-image: url('background.jpg');
             background-size: cover;
             background-position: center right;
             background-repeat: no-repeat;
         }
         .overlay {
-            background: rgba(255,255,255,0.85);
+            background: rgba(255,255,255,0.65); /* More transparent */
             width: 100vw;
             min-height: 100vh;
             display: flex;
-            align-items: flex-start;
+            align-items: center;
             justify-content: flex-start;
         }
         .content {
-            padding: 54px 32px 32px 6vw;
+            padding: 48px 48px 48px 10vw;
+            margin-left: 7vw; /* Move content more to the right */
             max-width: 540px;
-            min-height: 100vh;
+            min-height: 60vh;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
@@ -65,88 +65,4 @@
         }
         .headline {
             margin-top: 38px;
-            font-size: 1.4rem;
-            font-weight: 600;
-        }
-        .headline .future {
-            font-weight: 900;
-            color: #4f9374;
-        }
-        .desc {
-            margin-top: 22px;
-            font-size: 1.08rem;
-            color: #333;
-        }
-        .contact {
-            margin-top: 32px;
-            font-size: 1.08rem;
-            font-weight: bold;
-            color: #0076d4;
-        }
-        .contact a {
-            color: #0076d4;
-            text-decoration: underline;
-            font-weight: 700;
-        }
-        .footer {
-            margin-top: 60px;
-            font-size: 0.96rem;
-            color: #888;
-        }
-        @media (max-width: 900px) {
-            .content {
-                padding: 24px 12px 12px 12px;
-                max-width: 98vw;
-            }
-        }
-        @media (max-width: 650px) {
-            .overlay {
-                align-items: flex-start;
-                justify-content: center;
-            }
-            .content {
-                padding: 12vw 4vw 4vw 4vw;
-                max-width: 100vw;
-            }
-            .logo-img {
-                width: 38px;
-                height: 38px;
-                margin-right: 8px;
-            }
-            .brand-title {
-                font-size: 1.28rem;
-            }
-            .brand-subtitle {
-                font-size: 1rem;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="overlay">
-        <div class="content">
-            <div class="logo-row">
-                <img src="logo.png" alt="Ameen Technology Solutions logo" class="logo-img"/>
-                <div>
-                    <div class="brand-title">AMEEN</div>
-                    <div class="brand-subtitle">Technology Solutions</div>
-                </div>
-            </div>
-            <div class="headline">
-                <span class="future">The Future</span> of Prayer Aid Technology:<br>
-                Personalization Devices
-            </div>
-            <div class="desc">
-                Our website is under construction.<br>
-                Please check back soon.
-            </div>
-            <div class="contact">
-                Contact: <a href="mailto:info@ameentech.pro">info@ameentech.pro</a>
-            </div>
-            <div class="footer">
-                &copy; 2025 Ameen Tech. All rights reserved.
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+            font-size: 1.4rem
